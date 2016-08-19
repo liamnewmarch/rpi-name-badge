@@ -1,0 +1,14 @@
+html {
+  background: #2c242e;
+  color: #fff;
+  font: 100 16px sans-serif;
+  text-align: center;
+}
+
+body {
+  margin: 3rem 0 0;
+}
+
+p {
+  font-size: 2rem;
+}
