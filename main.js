@@ -34,21 +34,12 @@ firebase.$inject = ['$q', '$firebaseObject'];
 
 // View controller
 
-function ViewController(firebase, $timeout) {
+function ViewController(firebase) {
   var vm = this;
 
   firebase.get().then(function(data) {
     vm.data = data;
   });
-
-  vm.touch = function() {
-    if (vm.data.touch && !vm.touched) {
-      vm.touched = true;
-      $timeout(function() {
-        vm.touched = false;
-      }, 2000);
-    }
-  };
 }
 
-ViewController.$inject = ['firebase', '$timeout'];
+ViewController.$inject = ['firebase'];

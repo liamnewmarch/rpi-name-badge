@@ -1,6 +1,7 @@
 html {
-  font: 100 16px sans-serif;
-  text-align: center;
+  background: #000;
+  color: #888;
+  font: 100 24px sans-serif;
 
   /* Disable text selection */
   -webkit-touch-callout: none;
@@ -15,10 +16,6 @@ body {
   margin: 0;
 }
 
-p {
-  font-size: 32px;
-}
-
 img {
   /* Disable image smoothing */
   image-rendering: optimizeSpeed;
@@ -28,4 +25,24 @@ img {
   image-rendering: pixelated;
   image-rendering: optimize-contrast;
   -ms-interpolation-mode: nearest-neighbor;
+}
+
+div {
+  padding-top: 32px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+p {
+  margin: 0;
+  padding: 16px;
+}
+
+.now-playing {
+
+}
+
+strong {
+  color: #fff;
 }
